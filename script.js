@@ -76,3 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return shapes[Math.floor(Math.random() * shapes.length)];
     }
 });
+
+document.getElementById('backButton').addEventListener('click', () => {
+    window.location.href = "https://www.google.com"; // Ganti dengan URL yang kamu inginkan
+});
