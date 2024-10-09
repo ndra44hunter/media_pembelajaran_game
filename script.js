@@ -184,3 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return `Volume tabung: ${volume.toFixed(2)} cm³, Luas permukaan: ${surfaceArea.toFixed(2)} cm²`;
     }
 });
+
+document.getElementById('backButton').addEventListener('click', () => {
+    window.location.href = "https://www.google.com"; // Ganti dengan URL yang kamu inginkan
+});
