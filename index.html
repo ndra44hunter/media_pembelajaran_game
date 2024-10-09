@@ -3,36 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometri Game</title>
+    <title>Tebak Luas dan Volume - Geometri Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Geometri Game</h1>
-        <p>Pilih salah satu bangun untuk menghitung keliling, luas, atau volume:</p>
+        <h1>Geometri Game: Tebak Luas dan Volume</h1>
+        <p>Tebak luas, keliling, atau volume berdasarkan dimensi yang diberikan.</p>
 
-        <!-- Dropdown untuk memilih bangun -->
-        <select id="shapeSelector">
-            <option value="square">Persegi</option>
-            <option value="rectangle">Persegi Panjang</option>
-            <option value="triangle">Segitiga</option>
-            <option value="circle">Lingkaran</option>
-            <option value="cube">Kubus</option>
-            <option value="cuboid">Balok</option>
-            <option value="cone">Kerucut</option>
-            <option value="cylinder">Tabung</option>
+        <!-- Pilih tingkat kesulitan -->
+        <label for="difficulty">Pilih Tingkat Kesulitan:</label>
+        <select id="difficulty">
+            <option value="easy">Mudah</option>
+            <option value="medium">Sedang</option>
+            <option value="hard">Sulit</option>
         </select>
 
-        <!-- Input untuk pengguna -->
-        <div id="inputFields"></div>
-
-        <!-- Tombol untuk menghitung -->
-        <button id="calculateButton">Hitung</button>
-
-        <!-- Area untuk menampilkan hasil -->
-        <div id="result">
-            <p>Hasil akan ditampilkan di sini</p>
+        <!-- Tampilkan bangun dan dimensi -->
+        <div id="gameArea">
+            <p id="shapeInfo">Tunggu...</p>
+            <input type="number" id="guessInput" placeholder="Masukkan jawabanmu">
+            <button id="submitGuess">Tebak</button>
         </div>
+
+        <!-- Tampilkan hasil -->
+        <div id="result">
+            <p>Hasil: <span id="feedback"></span></p>
+        </div>
+
+        <!-- Skor -->
+        <div id="score">
+            <p>Skor Kamu: <span id="scoreValue">0</span></p>
+        </div>
+
+        <!-- Tombol untuk memulai kembali permainan -->
+        <button id="nextQuestion">Soal Selanjutnya</button>
     </div>
 
     <script src="script.js"></script>
