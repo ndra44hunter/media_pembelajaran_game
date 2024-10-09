@@ -186,5 +186,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.getElementById('backButton').addEventListener('click', () => {
-    window.location.href = "https://www.google.com"; // Ganti dengan URL yang kamu inginkan
+    window.location.href = "https://sites.google.com/view/sismul-kelompok2-2024/";
 });
