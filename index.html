@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometri Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Geometri Game</h1>
+        <p>Pilih salah satu bangun untuk menghitung keliling, luas, atau volume:</p>
+
+        <!-- Dropdown untuk memilih bangun -->
+        <select id="shapeSelector">
+            <option value="square">Persegi</option>
+            <option value="rectangle">Persegi Panjang</option>
+            <option value="triangle">Segitiga</option>
+            <option value="circle">Lingkaran</option>
+            <option value="cube">Kubus</option>
+            <option value="cuboid">Balok</option>
+            <option value="cone">Kerucut</option>
+            <option value="cylinder">Tabung</option>
+        </select>
+
+        <!-- Input untuk pengguna -->
+        <div id="inputFields"></div>
+
+        <!-- Tombol untuk menghitung -->
+        <button id="calculateButton">Hitung</button>
+
+        <!-- Area untuk menampilkan hasil -->
+        <div id="result">
+            <p>Hasil akan ditampilkan di sini</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
