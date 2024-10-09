@@ -54,6 +54,21 @@ button:hover {
     background-color: #218838;
 }
 
+#backButton {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backButton:hover {
+    background-color: #c82333;
+}
+
 #result,
 #score {
     margin-top: 20px;
